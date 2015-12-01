@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
  
 var userSchema = mongoose.Schema({
-        registrationToken:String
+        registrationToken:Array
 });
  
 mongoose.connect('mongodb://localhost:27017/dbpush');
