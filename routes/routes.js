@@ -35,7 +35,8 @@ reg.save(function(err,rec) {
             });
 
 });
-var token = req.body.registrationToken
+var token = req.body.registrationToken //['fOIT1kiHKy4:APA91bG9jD0xJc6q8_puL9roO874yY8Lu8GmcPyBmUTXJrsmk9tbFYM5lHd3_hOl3ziEES2uxkTnYKTFUqBYza7haarBJgp7cSi1HIIXH7iI4TfEWcdjrFuONuxOUyN9WMMd4SXWYZZa'];
+ 
 
 sender.send(message, { registrationTokens: token }, function (err, response) {
     if(err) console.error(err);
